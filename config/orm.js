@@ -70,7 +70,7 @@ connection.query(queryString, vals, function(err, result) {
     cb(result);
 });
 },
-// An example of objColVals would be {name: baconator, eaten: true}
+// An example of objColVals would be {name: The Original Burger, devoured: true}
 update: function(table, objColVals, condition, cb) {
 var queryString = "UPDATE " + table;
 

@@ -9,7 +9,7 @@ port: 3306,
 user: "root",
 // Your password
 password: "uprcayey",
-database: ""
+database: "burgers_db"
 });
 
 // Make connection.
