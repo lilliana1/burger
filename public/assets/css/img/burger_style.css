@@ -12,10 +12,6 @@
     border-radius: 5px;
 }
 
-#color-override {
-    color: #fff;
-}
-
 #lefthead {
     background-color: #5cb85c;
     color: white;
@@ -33,4 +29,3 @@
     text-align: center;
     font-size: 1.2em;
 }
-
