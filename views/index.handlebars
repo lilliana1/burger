@@ -1,0 +1,37 @@
+<div class="logo">
+    <img src="" alt="Logo">
+</div>
+
+<div class="row">
+    <div class="col-md-12 text-center">
+        <p class="text">🍴Type the burger you wanna eat!🍴</p>
+        <form class="form">
+            <div class="form-group">
+                <input type="text" placeholder="Burger name" id="burger-input" name="name">
+            </div>
+            <button id="submit-btn" type="submit">ADD BURGER</button>
+        </form>
+    </div>
+</div>
+
+<div class="row">
+
+    <div class="col-md-5 eat">
+        <h4>Burgers to eat!</h4>
+        <ul>
+            {{#each burgers}} {{#unless devoured}} {{/unless}} {{/each}}
+        </ul>
+    </div>
+    <div class="col-md-2"></div>
+    <div class="col-md-5 done">
+        <h4>Burgers you already have devoured!🍔</h4>
+        <ul>
+            {{#each burgers}} {{#if devoured}}
+            <div class="eat-burger">
+                <span class="label">#{{this.id}}</span>
+                <span class="label">{{this.burger_name}}</span>
+            </div>
+            {{/if}} {{/each}}
+        </ul>
+    </div>
+</div>

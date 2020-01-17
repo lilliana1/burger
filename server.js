@@ -17,8 +17,6 @@ app.use(express.json());
 // Set Handlebars.
 const exphbs = require("express-handlebars");
 
-// const mysql = require("mysql");
-
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
@@ -26,11 +24,6 @@ app.set("view engine", "handlebars");
 var routes = require("./controllers/burgersController.js");
 
 app.use(routes);
-
-
-// app.get("/", (req, res) => {
-//     res.render("index");
-// });
 
 // Start our server so that it can begin listening to client requests.
 app.listen(PORT, function() {
