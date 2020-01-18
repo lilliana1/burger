@@ -1,0 +1,49 @@
+.jumbotron {
+    background-position: center;
+    background-size: 85%;
+    margin-top: 10px;
+    color: paleturquoise;
+    background-image:url("https://i.redd.it/y49h8i4smfc21.png")     
+}
+
+.panel {
+    background-color: mediumseagreen;
+}
+
+#newburger {
+    border-radius: 5px;
+}
+
+#leftheader {
+    color: black;
+    text-align: center;
+    font-size: 1.2em;
+    
+}
+
+#eatbutton, #trashbutton {
+    float: right;
+    
+}
+
+#rightheader {
+    color: black;
+    text-align: center;
+    font-size: 1.2em;
+}
+* {
+    font-family: 'Alata', sans-serif;
+    
+}
+
+body {
+    background-image:url("/assets/img/background2.png")
+}
+
+#eatbutton {
+    background: orange;
+}
+
+#trashbutton {
+    background: tomato;
+}
