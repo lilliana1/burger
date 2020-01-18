@@ -1,12 +1,29 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
 
+    // eat burger
+    $(".eatBurger").on("click", function(event) {
+        var id = $(this).data("id");
+        var devour = $(this).data("devoured");
+        var devoured = {
+            devoured: devour
+        };
+
+        // Send the PUT request.
+        $.ajax("/api/burgers/" + id, {
+            type: "PUT",
+            data: devoured
+        }).then(function() {
+            console.log("Burger devoured");
+            location.reload();
+        });
+    });
+
     // Add a new burger.
     $(".create-form").on("submit", function(event) {
         event.preventDefault();
-
         var newBurger = {
-            burger_name: $("#newburger").val().trim(),
+            burger_name: $("#addBurger").val().trim(),
             devoured: 0
         };
 
@@ -21,24 +38,7 @@ $(function() {
         });
     });
 
-    $(".eatburger").on("click", function(event) {
-        event.preventDefault();
-
-        var id = $(this).data("id");
-        var devouredState = {
-            devoured: 1
-        };
-
-        // Send the PUT request.
-        $.ajax("/api/burgers/" + id, {
-            type: "PUT",
-            data: devouredState
-        }).then(function() {
-            console.log("Burger devoured");
-            location.reload();
-        });
-    });
-
+    
     $(".trashburger").on("click", function(event) {
         event.preventDefault();
 

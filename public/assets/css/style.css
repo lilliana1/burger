@@ -12,6 +12,7 @@
 
 #newburger {
     border-radius: 5px;
+    color: deeppink;
 }
 
 #leftheader {
@@ -20,12 +21,13 @@
     font-size: 1.2em;
     
 }
-#addburger {
+#addBurger {
     background: gold;
     color: tomato;
 }
 #eatbutton, #trashbutton {
     float: right;
+    border-radius: 5px;
     
 }
 
