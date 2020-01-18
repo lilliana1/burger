@@ -20,7 +20,10 @@
     font-size: 1.2em;
     
 }
-
+#addburger {
+    background: gold;
+    color: tomato;
+}
 #eatbutton, #trashbutton {
     float: right;
     
@@ -41,9 +44,12 @@ body {
 }
 
 #eatbutton {
+    
+    color: tomato;
     background: orange;
 }
 
 #trashbutton {
     background: tomato;
+    color:paleturquoise ;
 }
