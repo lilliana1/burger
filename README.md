@@ -5,6 +5,7 @@ Deployed app via heroku:
 
 (works on localhost:8080 if you follow instructions below)
 
+![](public/assets/img/screenshot.png)
 
 ## Technologies
 * HTML 
