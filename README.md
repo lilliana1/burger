@@ -1,9 +1,7 @@
 # Burger
 Burger is a restaurant app where users input the names of burgers they will like to eat. Whenever a user submits a burger's name, it will be display on the left side of the page waiting to be devour 🤤. When the user clicks it, the burger will move to the right side of the page and you have the option to throw them away!🗑. The app will store every 🍔 in the database, whether is devoured or not.
 
-Deployed app via heroku: 
-
-(works on localhost:8080 if you follow instructions below)
+Deployed app via heroku: https://guarded-headland-97092.herokuapp.com/
 
 ![](public/assets/img/screenshot.png)
 
