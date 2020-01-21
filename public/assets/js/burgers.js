@@ -5,6 +5,7 @@ $(function() {
     $(".eatBurger").on("click", function(event) {
         var id = $(this).data("id");
         var devour = $(this).data("devoured");
+
         var devoured = {
             devoured: devour
         };
@@ -23,7 +24,7 @@ $(function() {
     $(".create-form").on("submit", function(event) {
         event.preventDefault();
         var newBurger = {
-            burger_name: $("#addBurger").val().trim(),
+            burger_name: $("#newburger").val().trim(),
             devoured: 0
         };
 
@@ -39,11 +40,12 @@ $(function() {
     });
 
     
-    $(".trashburger").on("click", function(event) {
+    $(document).on("click", "#trashbutton", function(event) {
         event.preventDefault();
 
         var id = $(this).data("id");
-
+        console.log(id);
+        
         // Send the DELETE request.
         $.ajax({
             type: "DELETE",

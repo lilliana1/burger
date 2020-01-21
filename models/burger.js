@@ -17,6 +17,7 @@ create: function(cols, vals, cb) {
 },
 // The objColVals is an object specifying columns as object keys with associated values
 update: function(objColVals, condition, cb) {
+    
     orm.update("burgers", objColVals, condition, function(res) {
         cb(res);
     });
